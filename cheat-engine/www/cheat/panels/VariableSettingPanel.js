@@ -143,7 +143,7 @@ export default {
 
         onItemChange (item) {
             // modify value
-            $gameVariables.setValue(item.id, item.value)
+            $gameVariables.setValue(item.id, Number(item.value))
 
             // refresh
             item.value = $gameVariables.value(item.id)
